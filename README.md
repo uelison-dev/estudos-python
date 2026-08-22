@@ -13,8 +13,8 @@ O objetivo principal é documentar minha evolução no desenvolvimento e criar u
 
 ## 📂 Estrutura do Curso
 Aqui estão organizadas as atividades que já completei:
-* **Aula 02:** [Escreva aqui o tema principal, ex: Lógica básica e Variáveis]
-* **Aula 03:** [Escreva aqui o tema principal, ex: Laços de repetição (For/While)]
+* **Aula 02:** 
+* **Aula 03:** 
 
 ---
 👨‍💻 Desenvolvido com dedicação por **Dev Uelison**!
