@@ -14,7 +14,8 @@ O objetivo principal é documentar minha evolução no desenvolvimento e criar u
 ## 📂 Estrutura do Curso
 Aqui estão organizadas as atividades que já completei:
 * **Aula 02:** 
-* **Aula 03:** 
+* **Aula 03:**
+* **Aula 04:**
 
 ---
 👨‍💻 Desenvolvido com dedicação por **Dev Uelison**!
