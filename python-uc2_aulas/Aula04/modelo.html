@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <button class="btn btn-outline-light">
+            Exemplo 01
+        </button>
+
+        <button class="btn btn-primary">
+            Enviar
+        </button>
+
+        <input type="submit"
+                    class="btn btn-success"
+                    value="Salvar">
+
+        <a href="https://github.com/uelison-dev" 
+                    target="_blank"
+                    title="Portfólio do Uelison"
+                    class="btn btn-outline-danger">
+                    Github
+        </a>
+
+        <a href="#"
+            class="btn btn-outline-success">
+            <i class="bi bi-check-circle"></i> Sucesso
+        </a>
+
+        <a href="#" class="btn btn-outline-info">
+            <i class="bi bi-info-circle"></i> Info
+        </a>
+
+        <section id="section1" class="mb-3">
+        </section>
+
+        <section>
+            <div class="d-grid gap-2">
+                <button type="button" class="btn btn-primary">Full-Width Button</button>
+            </div>
+        </section>
+        
+        <table class="table table-striped table-hover table-dark align-middle">
+        <!--Cabeçalho da Tabela-->
+            <thead>
+                <!--Linha 1-->
+                <tr class="table-primary">
+                    <th>Imagem do Produto</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Ação</th>
+                    <td></td>
+                </tr>
+            </thead>
+        <!--Corpo da Tabela-->
+            <tbody>
+                <!--Linha 1-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Tenis+Fila\nRacer\nSpeedzone"></td>
+                    <td>Tênis Fila Racer Speedzone</td>
+                    <td>R$ 299,99</td>
+                    <td> 20 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="https://www.netshoes.com.br/p/tenis-fila-racer-speedzone-masculino-verde+limao+preto-I6E-8021-450?campaign=gglepqpla&selected=I6E-8021-450-38&sellerId=0&gclsrc=aw.ds&utm_term=source~google~~campaign~24053117169~~adset~198505817973_~~content~817882845567~~term~&gad_source=1&gad_campaignid=24053117169&gclid=EAIaIQobChMIz5O9o_OAlwMVGlBIAB2MBR_xEAQYAiABEgLnOvD_BwE" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 2-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Notebook\nAcer+V15"></td>
+                    <td>Notebook Gamer Acer Nitro V15 Anv155158ql</td>
+                    <td>R$ 6.349,90</td>
+                    <td> 10 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="https://www.kabum.com.br/produto/571098/notebook-gamer-acer-nitro-v15-intel-core-i5-13420h-8gb-ddr5-rtx-2050-4gb-ssd-512gb-tela-15-6-fhd-144hz-windows-11-home-anv15-51-58ql" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 3-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Smart+TV\n4K+86"></td>
+                    <td>Smart TV 4K 86" LG QNED73 Portal de Games Processador AI α7 Ger8 4K</td>
+                    <td>R$ 6.326,15</td>
+                    <td> 15 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="#" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 4-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Tenis+Nike\nVomero\nPlus"></td>
+                    <td>Tênis Nike Vomero Plus Masculino - Azul</td>
+                    <td>R$ 1.234,39</td>
+                    <td> 5 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="#" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 5-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=BYD\nHAN"></td>
+                    <td>BYD HAN</td>
+                    <td>R$ 559.800,00</td>
+                    <td> 8 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="https://www.byd.com/br/car/han" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 6-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Notebook\nAcer+V15"></td>
+                    <td>Tênis Adidas</td>
+                    <td>R$ 299,90</td>
+                    <td> 18 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="#" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 7-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Notebook\nAcer+V15"></td>
+                    <td>Tênis Adidas</td>
+                    <td>R$ 299,90</td>
+                    <td> 36 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="#" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 8-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Notebook\nAcer+V15"></td>
+                    <td>Tênis Adidas</td>
+                    <td>R$ 299,90</td>
+                    <td> 52 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="#" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 9-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Notebook\nAcer+V15"></td>
+                    <td>Tênis Adidas</td>
+                    <td>R$ 299,90</td>
+                    <td> 2 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="#" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <!--Linha 10-->
+                <tr>
+                    <td><img src="https://placehold.co/100x100?text=Notebook\nAcer+V15"></td>
+                    <td>Tênis Adidas</td>
+                    <td>R$ 299,90</td>
+                    <td> 0 </td>
+                    <!--Ação-->
+                    <td>
+                        <a href="#" 
+                        class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-bag-fill"></i>
+                        </a>
+                        <a href="#" 
+                        class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
