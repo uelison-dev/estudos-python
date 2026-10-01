@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Inicio do Head-->
+
+<head>
+    <title>Eletronicos do Papagaio - Formulário de Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Cadastro de clientes">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .adicionar_borda {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+    </style>
+
+</head>
+<!-- Final do Head-->
+
+<!-- Inicio do Body -->
+
+<body class="bg-secondary">
+    <!-- 
+    DIV - Prinicipal
+    Area principal do site contem o 
+        - Header
+        - Main 
+        - Footer
+ -->
+    <div id="div_principal" class="container adicionar_borda bg-light">
+        <!--
+        Header da pagina 
+        [-] Logotipo 
+        [-] Titulo
+        [-] Menu Principal
+        [-] Login / Logout / Criar conta
+    -->
+        <header class="adicionar_borda">
+            <div class="row">
+                <div class="col-12">
+                    Logo / Titulo
+                </div>
+            </div>
+
+            <!-- Navybar Principal-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="produtos.html">
+                                    Loja
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex">
+                            <button class="btn btn-sm btn-outline-success me-1">
+                                <i class="bi bi-box-arrow-in-right"></i>
+                                Login
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger me-1">
+                                <i class="bi bi-box-arrow-in-left"></i>
+                                Logout
+                            </button>
+                            <button class="btn btn-sm btn-outline-primary me-1">
+                                <i class="bi bi-person-plus-fill"></i>
+                                Cadastrar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fim da Navybar-->
+
+        </header>
+
+        <!-- 
+        Main da pagina 
+    -->
+        <main class="adicionar_borda">
+            <!-- Formulário de Cadastro -->
+            <form action="cadastro/" method="get" target="_blank">
+
+                <!-- Nome Completo -->
+                <div class="m-3">
+                    <label class="form-label" for="nome">Nome Completo:</label>
+                    <input class="form-control" type="text" id="nome" name="nome" required
+                        placeholder="Seu nome completo" title="Informe o seu nome completo (campo obrigatório)">
+                </div>
+
+
+                <div class="m-3">
+                    <!-- E-mail de login -->
+                    <label class="form-label" for="email">E-mail:</label>
+                    <input class="form-control" type="email" id="email" name="email" required
+                        placeholder="exemplo@email.com">
+                </div>
+
+                <div class="m-3">
+                    <!-- Estado -->
+                    <label for="state" class="form-label">Estado:</label>
+                    <select class="form-select" id="state" name="state">
+                        <option value="" selected>Selecione um dos estados</option>
+
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+
+                <div class="m-3">
+                    <label for="curriculo" class="form-label">Enviar Currículo (PDF,Doc,Docx)</label>
+                    <input class="form-control" type="file" id="curriculo" accept=".pdf,.doc,.docx">
+                </div>
+
+
+                <!-- CEP -->
+
+                <!-- Logradouro -->
+
+                <!-- Complemento -->
+
+                <!-- Bairro -->
+
+                <!-- Cidade -->
+
+                <!-- Estado -->
+
+                <!-- Botões -->
+                <div class="m-3 row">
+                    <div class="col-6">
+                        <button type="submit" class="form-control btn btn-outline-primary">
+                            Enviar
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="reset" class="form-control btn btn-outline-danger">
+                            Limpar
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+            <!-- Final do Form -->
+        </main>
+
+        <!--
+        Footer da pagina 
+        [-] Menu Secundário
+        [-] Contato
+        [-] Copyright do site
+        [-] Redes Sociais
+    -->
+        <footer class="adicionar_borda">
+            <div class="row">
+                <div class="col-4">
+                    Menu Secundário
+                </div>
+
+                <div class="col-5">
+                    Contato <br>
+                    Copyright
+                </div>
+
+                <!--
+                Redes Sociais - Github, Youtube, Instagran, 
+                                Linkedin, Facebook                
+            -->
+                <div class="col-3 p-2">
+                    <div class="mb-2">Redes Sociais:</div>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/uelison-dev/" target="_blank" title="Acesse nosso GitHub"
+                        rel="noopener noreferrer" class="btn btn-sm btn-outline-dark me-1">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#" target="_blank" title="Acesse nosso YouTube" rel="noopener noreferrer"
+                        class="btn btn-sm btn-outline-dark me-1">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#" target="_blank" title="Acesse nosso Instagram" rel="noopener noreferrer"
+                        class="btn btn-sm btn-outline-dark me-1">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#" target="_blank" title="Acesse nosso LinkedIn" rel="noopener noreferrer"
+                        class="btn btn-sm btn-outline-dark me-1">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="#" target="_blank" title="Acesse nosso Facebook" rel="noopener noreferrer"
+                        class="btn btn-sm btn-outline-dark">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+    <!-- Final da Div Principal-->
+
+    <!-- Não apague a tag "SCRIPT" -->
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Não apague a tag "SCRIPT" -->
+</body>
+<!-- Final do Body-->
+
+</html>
