@@ -1,276 +1,338 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- Inicio do Head-->
 
 <head>
-    <title>[MUDAR]</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[MUDAR]">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-    <style>
-        .adicionar_borda {
-            border-width: 1px;
-            border-style: solid;
-            border-color: black;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Riverside Store: materiais de construção, ferramentas, tintas e revestimentos em um só lugar.">
+  <meta name="theme-color" content="#071b35">
+  <title>Início | Riverside Store</title>
+  <!-- Bootstrap 5.3.6 local: o layout funciona mesmo sem internet. Sem JavaScript. -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado APÓS o Bootstrap para permitir sobrescrever seus estilos. -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" type="image/png" href="img/logo-marca.png">
 </head>
-<!-- Final do Head-->
 
-<!-- Inicio do Body -->
-
-<body class="bg-light">
-
-    <!--
-        Header da pagina 
-        [-] Logotipo 
-        [-] Titulo
-        [-] Menu Principal
-        [-] Login / Logout / Criar conta
-    -->
-
-    <header class="">
-        <!-- Navbar - Inicio -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="Riverside Store" width="100px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                Home
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="produtos.html">
-                                Produtos
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">
-                                Sobre
-                            </a>
-                        </li>
-
-                    </ul>
-
-                    <form class="d-flex">
-
-                        <a href="auth/login" class="btn btn-sm btn-light me-1">
-                            <i class="fa fa-user m-1" aria-hidden="true"></i>Login
-                        </a>
-                        <a href="auth/logout" class="btn btn-sm btn-danger me-1">
-                            <i class="fa fa-user-times m-1" aria-hidden="true"></i>Logout
-                        </a>
-                        <a href="cadastro.html" class="btn btn-sm btn-primary me-1" title="Realizar o cadastro">
-                            <i class="fa-solid fa-user-plus m-1"></i>Register
-                        </a>
-                    </form>
-                </div>
+<body>
+  <!-- Cabeçalho compartilhado pelas cinco páginas -->
+  <header class="site-header">
+    <div class="topline">
+      <div class="container d-flex align-items-center justify-content-between gap-3"><span>RIVERSIDE STORE <span
+            class="sep">/</span> MATERIAIS DE CONSTRUÇÃO</span><span class="d-none d-sm-inline">Uma nova direção para
+          seu projeto <span class="accent-green">✦</span></span></div>
+    </div>
+    <div class="container header-main">
+      <a class="brand" href="index.html" aria-label="Riverside Store — voltar ao início">
+        <img src="img/logo-marca.png" width="61" height="61" alt="" class="brand-symbol">
+        <span class="brand-words"><strong>RIVERSIDE</strong><small>STORE <i>●</i> CONSTRUÇÃO &amp;
+            REFORMA</small></span>
+      </a>
+      <nav class="desktop-links" aria-label="Navegação principal"><a class="nav-link-site is-active" href="index.html"
+          aria-current="page">Início</a><a class="nav-link-site " href="produtos.html">Produtos</a><a
+          class="nav-link-site " href="cadastro.html">Cadastro</a><a class="nav-link-site "
+          href="sobre.html">Sobre</a><a class="nav-link-site " href="trabalheConosco.html">Trabalhe Conosco</a></nav>
+      <a class="btn btn-outline-sky header-account" href="cadastro.html">Criar conta <span
+          aria-hidden="true">↗</span></a>
+      <details class="mobile-navigation">
+        <summary aria-label="Abrir ou fechar menu"><span></span><span></span><span></span><b>Menu</b></summary>
+        <nav class="mobile-list" aria-label="Navegação para celular"><a class="mobile-link is-active"
+            href="index.html">Início</a><a class="mobile-link " href="produtos.html">Produtos</a><a class="mobile-link "
+            href="cadastro.html">Cadastro</a><a class="mobile-link " href="sobre.html">Sobre</a><a class="mobile-link "
+            href="trabalheConosco.html">Trabalhe Conosco</a></nav>
+      </details>
+    </div>
+    <div class="header-bottom">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <span class="mini-headline"><span class="sparkle">✦</span> Tudo para construir, reformar e transformar.</span>
+        <a href="produtos.html" class="header-shortcut">Explorar catálogo <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </header>
+  <main id="conteudo">
+    <!-- HERO: primeira seção, possui o H1 principal da página -->
+    <section class="hero-home">
+      <div class="hero-gridlines" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-copy">
+            <span class="eyebrow eyebrow-light"><span class="status-dot"></span> MATERIAL PARA IR MAIS LONGE</span>
+            <h1>Da ideia à obra.<br><span class="gradient-text">Tudo flui melhor.</span></h1>
+            <p class="hero-lead">Materiais de construção, ferramentas e acabamentos em um só lugar. Sua próxima
+              conquista começa com as escolhas certas.</p>
+            <div class="d-flex gap-3 flex-wrap hero-buttons"><a class="btn btn-river btn-lg"
+                href="produtos.html">Explorar produtos <span aria-hidden="true">→</span></a><a
+                class="btn btn-ghost btn-lg" href="sobre.html">Conhecer a loja <span aria-hidden="true">↗</span></a>
             </div>
-        </nav>
-        <!-- Navbar - Final -->
-
-    </header>
-
-    <!-- 
-        Main da pagina 
-    -->
-    <main class="bg-light">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <img src="img/logo.png" class="img-fluid d-block mx-auto" alt="Riverside Store" width="500px">
-                </div>
+            <div class="hero-proof"><span><b>✦</b> Variedade de categorias</span><span><b>✓</b> Experiência
+                intuitiva</span></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="hero-image-halo"></div><img class="hero-photo" src="img/banner-obra.jpg"
+                alt="Cimento, tijolos, capacete de proteção e outros materiais de construção">
+              <div class="hero-float top-float"><span class="float-mark">R</span>
+                <div><b>RIVERSIDE SELECTION</b><small>Da estrutura ao acabamento</small></div>
+              </div>
+              <div class="hero-float bottom-float"><span class="float-star">✦</span>
+                <div><b>Seu projeto em primeiro lugar</b><small>Descubra uma loja feita para sua obra</small></div>
+              </div>
             </div>
+          </div>
         </div>
-    </main>
-
-    <!--
-        Footer da pagina 
-        [-] Menu Secundário
-        [-] Contato
-        [-] Copyright do site
-        [-] Redes Sociais
-    -->
-
-    <footer class="bg-dark text-light">
-        <div class="container py-4">
-            <div class="row">
-
-                <!-- Coluna - Links Rápidos -->
-                <div class="col-2">
-                    <p>Links Rápidos :</p>
-
-                    <nav class="nav flex-column">
-
-                        <a class=" navbar-dark text-white py-1" href="sobre.html">
-                            Quem Somos
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="faleConosco.html">
-                            Fale conosco
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="trabalheConosco.html">
-                            <a class="nav-link text-white py-1" href="trabalheConosco.html">
-                                Trabalhe conosco
-                            </a>
-
-                            <a class="nav-link text-white py-1" href="perfil.html">
-                                Meu Perfil
-                            </a>
-
-                            <a class="nav-link text-white py-1" href="blog.html">
-                                Blog
-                            </a>
-
-                    </nav>
-
-                </div>
-
-                <!-- Coluna - Contatos -->
-                <div class="col-3">
-                    <p>Contatos</p>
-
-                    <nav class="nav flex-column">
-
-                        <a class="nav-link text-white py-1" href="#">
-                            <i class="bi bi-headset">
-                                +55 (22) 2222-3222
-                            </i>
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="#">
-                            <i class="bi bi-envelope-fill">
-                                contato@text.com.br
-                            </i>
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="suporte.html">
-                            <i class="bi bi-headset">
-                                Suporte
-                            </i>
-                        </a>
-                </div>
-                </nav>
-
-                <!--
-                Redes Sociais - Github, Youtube, Instagran, 
-                                Linkedin, Facebook                
-            -->
-                <div class="col-7 text-end p-3">
-                    <p>Redes Socias:</p>
-                    <a href="https://github.com/luisrodrigonet/" target="_blank" title="Acesse nosso GitHub"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="https://www.youtube.com/" target="_blank" title="Acesse canal no Youtube"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/" target="_blank" title="Acesse o nosso Instagram"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-
-                    <a href="https://br.linkedin.com/" target="_blank" title="Acesse o nosso Linkedin"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/" target="_blank" title="Acesse o nosso Facebook"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                </div>
+      </div>
+    </section>
+    <!-- Diferenciais da loja -->
+    <section class="advantage-strip" aria-label="Diferenciais">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-4 advantage"><span class="advantage-icon">↗</span>
+            <div><strong>Tudo no mesmo lugar</strong><small>Da fundação ao acabamento</small></div>
+          </div>
+          <div class="col-md-4 advantage"><span class="advantage-icon">✓</span>
+            <div><strong>Escolha com confiança</strong><small>Informações claras e organizadas</small></div>
+          </div>
+          <div class="col-md-4 advantage"><span class="advantage-icon">✦</span>
+            <div><strong>Mais possibilidades</strong><small>Soluções para cada ambiente</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Categorias -->
+    <section class="section-space" id="categorias">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">EXPLORE A RIVERSIDE</span>
+            <h2>Categorias para <span>cada etapa</span></h2>
+            <p>Escolha por onde começar sua obra.</p>
+          </div><a href="produtos.html#catalogo" class="text-link">Ver catálogo completo <span
+              aria-hidden="true">↗</span></a>
+        </div>
+        <div class="row g-3 g-lg-4">
+          <div class="col-6 col-md-4 col-xl-2"><a class="category-card" href="produtos.html#catalogo">
+              <div class="category-photo"><img src="img/cat-cimentos.jpg" alt="Cimentos" loading="lazy"></div>
+              <div class="category-info">
+                <h3>Cimentos</h3><span aria-hidden="true">↗</span>
+              </div>
+              <p>Base sólida para construir.</p>
+            </a></div>
+          <div class="col-6 col-md-4 col-xl-2"><a class="category-card" href="produtos.html#catalogo">
+              <div class="category-photo"><img src="img/cat-ferramentas.jpg" alt="Ferramentas" loading="lazy"></div>
+              <div class="category-info">
+                <h3>Ferramentas</h3><span aria-hidden="true">↗</span>
+              </div>
+              <p>Precisão em cada etapa.</p>
+            </a></div>
+          <div class="col-6 col-md-4 col-xl-2"><a class="category-card" href="produtos.html#catalogo">
+              <div class="category-photo"><img src="img/cat-hidraulica.jpg" alt="Hidráulica" loading="lazy"></div>
+              <div class="category-info">
+                <h3>Hidráulica</h3><span aria-hidden="true">↗</span>
+              </div>
+              <p>Soluções para instalações.</p>
+            </a></div>
+          <div class="col-6 col-md-4 col-xl-2"><a class="category-card" href="produtos.html#catalogo">
+              <div class="category-photo"><img src="img/cat-eletrica.jpg" alt="Elétrica" loading="lazy"></div>
+              <div class="category-info">
+                <h3>Elétrica</h3><span aria-hidden="true">↗</span>
+              </div>
+              <p>Energia com segurança.</p>
+            </a></div>
+          <div class="col-6 col-md-4 col-xl-2"><a class="category-card" href="produtos.html#catalogo">
+              <div class="category-photo"><img src="img/cat-pisos.jpg" alt="Revestimentos" loading="lazy"></div>
+              <div class="category-info">
+                <h3>Revestimentos</h3><span aria-hidden="true">↗</span>
+              </div>
+              <p>O acabamento que inspira.</p>
+            </a></div>
+          <div class="col-6 col-md-4 col-xl-2"><a class="category-card" href="produtos.html#catalogo">
+              <div class="category-photo"><img src="img/cat-tintas.jpg" alt="Tintas" loading="lazy"></div>
+              <div class="category-info">
+                <h3>Tintas</h3><span aria-hidden="true">↗</span>
+              </div>
+              <p>Novas cores para ambientes.</p>
+            </a></div>
+        </div>
+      </div>
+    </section>
+    <!-- Destaques -->
+    <section class="section-space section-tinted" id="destaques">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">SELECIONADOS PARA VOCÊ</span>
+            <h2>Produtos em <span>destaque</span></h2>
+            <p>Algumas ideias para tirar seus planos do papel.</p>
+          </div><a href="produtos.html#catalogo" class="text-link">Todos os produtos <span
+              aria-hidden="true">↗</span></a>
+        </div>
+        <div class="row g-3">
+          <div class="col-6 col-lg-4 col-xl-2 produto cat-cimento">
+            <article class="product-card h-100">
+              <div class="product-art"><span class="product-tag">Cimentos</span><img src="img/produto-cimento.jpg"
+                  alt="Cimento CP II 32" loading="lazy"></div>
+              <div class="product-details">
+                <p class="product-subtitle">50 kg · materiais básicos</p>
+                <h3>Cimento CP II 32</h3>
+                <div class="stars" aria-label="Produto ilustrativo">✦ ✦ ✦ ✦ <span>✦</span></div>
+                <p class="product-price">R$ 32,90</p>
+                <a href="produtos.html#catalogo" class="btn btn-river btn-card w-100">Ver no catálogo <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-2 produto cat-cimento">
+            <article class="product-card h-100">
+              <div class="product-art"><span class="product-tag">Cimentos</span><img src="img/produto-tijolo.jpg"
+                  alt="Tijolo cerâmico" loading="lazy"></div>
+              <div class="product-details">
+                <p class="product-subtitle">9 furos · alvenaria</p>
+                <h3>Tijolo cerâmico</h3>
+                <div class="stars" aria-label="Produto ilustrativo">✦ ✦ ✦ ✦ <span>✦</span></div>
+                <p class="product-price">R$ 1,29</p>
+                <a href="produtos.html#catalogo" class="btn btn-river btn-card w-100">Ver no catálogo <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-2 produto cat-tinta">
+            <article class="product-card h-100">
+              <div class="product-art"><span class="product-tag">Tintas</span><img src="img/produto-tinta.jpg"
+                  alt="Tinta acrílica premium" loading="lazy"></div>
+              <div class="product-details">
+                <p class="product-subtitle">18 L · pintura</p>
+                <h3>Tinta acrílica premium</h3>
+                <div class="stars" aria-label="Produto ilustrativo">✦ ✦ ✦ ✦ <span>✦</span></div>
+                <p class="product-price">R$ 289,90</p>
+                <a href="produtos.html#catalogo" class="btn btn-river btn-card w-100">Ver no catálogo <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-2 produto cat-hidraulica">
+            <article class="product-card h-100">
+              <div class="product-art"><span class="product-tag">Hidráulica</span><img src="img/produto-vaso.jpg"
+                  alt="Vaso sanitário" loading="lazy"></div>
+              <div class="product-details">
+                <p class="product-subtitle">Caixa acoplada · banheiro</p>
+                <h3>Vaso sanitário</h3>
+                <div class="stars" aria-label="Produto ilustrativo">✦ ✦ ✦ ✦ <span>✦</span></div>
+                <p class="product-price">R$ 429,90</p>
+                <a href="produtos.html#catalogo" class="btn btn-river btn-card w-100">Ver no catálogo <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-2 produto cat-hidraulica">
+            <article class="product-card h-100">
+              <div class="product-art"><span class="product-tag">Hidráulica</span><img src="img/produto-torneira.jpg"
+                  alt="Torneira gourmet" loading="lazy"></div>
+              <div class="product-details">
+                <p class="product-subtitle">Acabamento cromado · cozinha</p>
+                <h3>Torneira gourmet</h3>
+                <div class="stars" aria-label="Produto ilustrativo">✦ ✦ ✦ ✦ <span>✦</span></div>
+                <p class="product-price">R$ 199,90</p>
+                <a href="produtos.html#catalogo" class="btn btn-river btn-card w-100">Ver no catálogo <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-2 produto cat-ferramentas">
+            <article class="product-card h-100">
+              <div class="product-art"><span class="product-tag">Ferramentas</span><img src="img/produto-furadeira.jpg"
+                  alt="Parafusadeira" loading="lazy"></div>
+              <div class="product-details">
+                <p class="product-subtitle">12 V · ferramentas</p>
+                <h3>Parafusadeira</h3>
+                <div class="stars" aria-label="Produto ilustrativo">✦ ✦ ✦ ✦ <span>✦</span></div>
+                <p class="product-price">R$ 349,90</p>
+                <a href="produtos.html#catalogo" class="btn btn-river btn-card w-100">Ver no catálogo <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="demo-note mt-3">Produtos e preços apenas ilustrativos. Não há compra online nesta demonstração.</p>
+      </div>
+    </section>
+    <!-- Chamada visual -->
+    <section class="container">
+      <div class="promo-river">
+        <div class="promo-content"><span class="eyebrow eyebrow-light">CONSTRUA SEU PRÓXIMO CAPÍTULO</span>
+          <h2>Os melhores projetos começam com <em>boas escolhas.</em></h2>
+          <p>Conheça as opções da Riverside Store para cada espaço da sua casa ou obra.</p><a href="produtos.html"
+            class="btn btn-light-river">Descobrir o catálogo <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="promo-art" aria-hidden="true"><span>R</span><i></i><i></i><i></i></div>
+      </div>
+    </section>
+    <!-- Institucional e recrutamento -->
+    <section class="section-space">
+      <div class="container">
+        <div class="row align-items-stretch g-4">
+          <div class="col-lg-7">
+            <div class="about-preview h-100"><span class="eyebrow">QUEM SOMOS</span>
+              <h2>Uma loja feita para acompanhar <span>seus planos.</span></h2>
+              <p>Na Riverside Store, acreditamos que cada material faz parte de algo maior: o lugar que você está
+                criando. Conheça a proposta por trás da nossa marca.</p><a class="text-link" href="sobre.html">Nossa
+                história <span aria-hidden="true">→</span></a>
+              <div class="about-decoration">R<span>↗</span></div>
             </div>
-
-            <hr>
-
-            <div class="row">
-
-                <!-- Idioma -->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-
-                        <div class="ms-auto">
-                            <!-- Dropdown de Idioma -->
-                            <div class="dropup" id="languageSelector">
-                                <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center gap-2"
-                                    type="button" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-globe"></i>
-                                    <span id="currentLang">Português</span>
-                                </button>
-                                <!-- Mantém o dropdown-menu-end para alinhar à direita se estiver na borda da tela -->
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLang">
-                                    <li>
-                                        <a class="dropdown-item active d-flex justify-content-between align-items-center"
-                                            href="#" data-lang="pt">
-                                            Português <span>🇧🇷</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            href="#" data-lang="en">
-                                            English <span>🇺🇸</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            href="#" data-lang="es">
-                                            Español <span>🇪🇸</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </nav>
-
-                <!-- Moeda -->
-                <div class="col-1">
-                </div>
-
-                <!-- Links Rápidos -->
-                <div class="col-9">
-                </div>
-
+          </div>
+          <div class="col-lg-5">
+            <div class="career-preview h-100"><span class="eyebrow eyebrow-light">FAÇA PARTE DA RIVERSIDE</span>
+              <h2>Construa uma carreira <span>com a gente.</span></h2>
+              <p>Talento, aprendizado e novas oportunidades começam com uma conexão.</p><a class="btn btn-river"
+                href="trabalheConosco.html">Trabalhe conosco <span aria-hidden="true">→</span></a>
             </div>
-    </footer>
-
-    <!-- Não apague a tag "SCRIPT" -->
-    <!-- Bootstrap JS e dependências -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-    </script>
-    <!-- Não apague a tag "SCRIPT" -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Rodapé com a mesma identidade visual em todas as páginas -->
+  <footer class="site-footer">
+    <div class="container py-5">
+      <div class="row g-4 g-lg-5">
+        <div class="col-md-5 col-lg-4">
+          <a href="index.html" class="footer-brand" aria-label="Riverside Store — Início"><img src="img/logo.png"
+              alt="Logo original Riverside Store" width="140" height="140"></a>
+          <p class="footer-description">Do primeiro tijolo aos últimos detalhes. Uma experiência de compra pensada para
+            acompanhar sua obra.</p>
+          <span class="footer-pill">✦ Sua obra começa aqui</span>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h2 class="footer-heading">Navegação</h2>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="trabalheConosco.html">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <h2 class="footer-heading">Categorias</h2>
+          <ul class="footer-links">
+            <li><a href="produtos.html#catalogo">Cimentos e argamassas</a></li>
+            <li><a href="produtos.html#catalogo">Ferramentas</a></li>
+            <li><a href="produtos.html#catalogo">Hidráulica e elétrica</a></li>
+            <li><a href="produtos.html#catalogo">Tintas e acabamentos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h2 class="footer-heading">Atendimento</h2>
+          <p class="footer-contact">Adicione aqui o telefone, e-mail e endereço reais da sua loja.</p>
+          <a href="cadastro.html" class="footer-link-button">Conheça nosso cadastro <span
+              aria-hidden="true">→</span></a>
+          <p class="footer-disclaimer">Projeto demonstrativo — informações comerciais ilustrativas.</p>
+        </div>
+      </div>
+      <div class="footer-lower d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+        <span>© 2026 Riverside Store. Layout demonstrativo para estudos.</span>
+        <span>Feito com HTML5 <i>·</i> CSS3 <i>·</i> Bootstrap 5.3</span>
+      </div>
+    </div>
+  </footer>
 </body>
-<!-- Final do Body-->
 
 </html>

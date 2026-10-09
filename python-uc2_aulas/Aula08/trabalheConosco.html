@@ -1,359 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- Inicio do Head-->
-
 <head>
-    <title>[MUDAR]</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="[MUDAR]">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-    <style>
-        .adicionar_borda {
-            border-width: 1px;
-            border-style: solid;
-            border-color: black;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça as áreas de atuação e o formulário demonstrativo de currículos da Riverside Store.">
+  <meta name="theme-color" content="#071b35">
+  <title>Trabalhe Conosco | Riverside Store</title>
+  <!-- Bootstrap 5.3.6 local: o layout funciona mesmo sem internet. Sem JavaScript. -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS personalizado APÓS o Bootstrap para permitir sobrescrever seus estilos. -->
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" type="image/png" href="img/logo-marca.png">
 </head>
-<!-- Final do Head-->
-
-<!-- Inicio do Body -->
-
-<body class="bg-light">
-
-    <!--
-        Header da pagina 
-        [-] Logotipo 
-        [-] Titulo
-        [-] Menu Principal
-        [-] Login / Logout / Criar conta
-    -->
-
-    <header class="">
-        <!-- Navbar - Inicio -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" alt="Riverside Store" width="100px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                Home
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="produtos.html">
-                                Produtos
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">
-                                Sobre
-                            </a>
-                        </li>
-
-                    </ul>
-
-                    <form class="d-flex">
-
-                        <a href="auth/login" class="btn btn-sm btn-light me-1">
-                            <i class="fa fa-user m-1" aria-hidden="true"></i>Login
-                        </a>
-                        <a href="auth/logout" class="btn btn-sm btn-danger me-1">
-                            <i class="fa fa-user-times m-1" aria-hidden="true"></i>Logout
-                        </a>
-                        <a href="cadastro.html" class="btn btn-sm btn-primary me-1" title="Realizar o cadastro">
-                            <i class="fa-solid fa-user-plus m-1"></i>Register
-                        </a>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar - Final -->
-
-    </header>
-
-    <!-- 
-        Main da pagina 
-    -->
-    <main class="bg-light">
-        <div class="container">
-            <form action="cadastro/" method="get" target="_blank">
-
-                <!-- Nome Completo -->
-                <div class="m-3">
-                    <label class="form-label" for="nome">Nome Completo:</label>
-                    <input class="form-control" type="text" id="nome" name="nome" required
-                        placeholder="Seu nome completo" title="Informe o seu nome completo (campo obrigatório)">
-                </div>
-
-
-                <div class="m-3">
-                    <!-- E-mail de login -->
-                    <label class="form-label" for="email">E-mail:</label>
-                    <input class="form-control" type="email" id="email" name="email" required
-                        placeholder="exemplo@email.com">
-                </div>
-
-                <div class="m-3">
-                    <!-- Estado -->
-                    <label for="state" class="form-label">Estado:</label>
-                    <select class="form-select" id="state" name="state">
-                        <option value="" selected>Selecione um dos estados</option>
-
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </div>
-
-
-                <div class="m-3">
-                    <label for="curriculo" class="form-label">Enviar Currículo (PDF,Doc,Docx)</label>
-                    <input class="form-control" type="file" id="curriculo" accept=".pdf,.doc,.docx">
-                </div>
-
-
-                <!-- CEP -->
-
-                <!-- Logradouro -->
-
-                <!-- Complemento -->
-
-                <!-- Bairro -->
-
-                <!-- Cidade -->
-
-                <!-- Estado -->
-
-                <!-- Botões -->
-                <div class="m-3 row">
-                    <div class="col-6">
-                        <button type="submit" class="form-control btn btn-outline-primary">
-                            Enviar
-                        </button>
-                    </div>
-                    <div class="col-6">
-                        <button type="reset" class="form-control btn btn-outline-danger">
-                            Limpar
-                        </button>
-                    </div>
-                </div>
-
-            </form>
-            <!-- Final do Form -->
-        </div>
-        </div>
-    </main>
-
-    <!--
-        Footer da pagina 
-        [-] Menu Secundário
-        [-] Contato
-        [-] Copyright do site
-        [-] Redes Sociais
-    -->
-
-    <footer class="bg-dark text-light">
-        <div class="container py-4">
-            <div class="row">
-
-                <!-- Coluna - Links Rápidos -->
-                <div class="col-2">
-                    <p>Links Rápidos :</p>
-
-                    <nav class="nav flex-column">
-
-                        <a class="nav-link text-white py-1" href="sobre.html">
-                            Quem Somos
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="faleConosco.html">
-                            Fale conosco
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="trabalheConosco.html">
-                            Trabalhe conosco
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="perfil.html">
-                            Meu Perfil
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="blog.html">
-                            Blog
-                        </a>
-
-                    </nav>
-
-                </div>
-
-                <!-- Coluna - Contatos -->
-                <div class="col-3">
-                    <p>Contatos</p>
-
-                    <nav class="nav flex-column">
-
-                        <a class="nav-link text-white py-1" href="#">
-                            <i class="bi bi-headset">
-                                +55 (22) 2222-3222
-                            </i>
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="#">
-                            <i class="bi bi-envelope-fill">
-                                contato@text.com.br
-                            </i>
-                        </a>
-
-                        <a class="nav-link text-white py-1" href="suporte.html">
-                            <i class="bi bi-headset">
-                                Suporte
-                            </i>
-                        </a>
-                </div>
-                </nav>
-
-                <!--
-                Redes Sociais - Github, Youtube, Instagran, 
-                                Linkedin, Facebook                
-            -->
-                <div class="col-7 text-end p-3">
-                    <p>Redes Socias:</p>
-                    <a href="https://github.com/luisrodrigonet/" target="_blank" title="Acesse nosso GitHub"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a href="https://www.youtube.com/" target="_blank" title="Acesse canal no Youtube"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/" target="_blank" title="Acesse o nosso Instagram"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-
-                    <a href="https://br.linkedin.com/" target="_blank" title="Acesse o nosso Linkedin"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/" target="_blank" title="Acesse o nosso Facebook"
-                        class="btn btn-sm btn btn-outline-light">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="row">
-
-                <!-- Idioma -->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-
-                        <div class="ms-auto">
-                            <!-- Dropdown de Idioma -->
-                            <div class="dropup" id="languageSelector">
-                                <button class="btn btn-outline-light dropdown-toggle d-flex align-items-center gap-2"
-                                    type="button" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-globe"></i>
-                                    <span id="currentLang">Português</span>
-                                </button>
-                                <!-- Mantém o dropdown-menu-end para alinhar à direita se estiver na borda da tela -->
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownLang">
-                                    <li>
-                                        <a class="dropdown-item active d-flex justify-content-between align-items-center"
-                                            href="#" data-lang="pt">
-                                            Português <span>🇧🇷</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            href="#" data-lang="en">
-                                            English <span>🇺🇸</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            href="#" data-lang="es">
-                                            Español <span>🇪🇸</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </nav>
-
-                <!-- Moeda -->
-                <div class="col-1">
-                </div>
-
-                <!-- Links Rápidos -->
-                <div class="col-9">
-                </div>
-
-            </div>
-    </footer>
-
-    <!-- Não apague a tag "SCRIPT" -->
-    <!-- Bootstrap JS e dependências -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
-    </script>
-    <!-- Não apague a tag "SCRIPT" -->
+<body>
+<!-- Cabeçalho compartilhado pelas cinco páginas -->
+<header class="site-header">
+  <div class="topline"><div class="container d-flex align-items-center justify-content-between gap-3"><span>RIVERSIDE STORE <span class="sep">/</span> MATERIAIS DE CONSTRUÇÃO</span><span class="d-none d-sm-inline">Uma nova direção para seu projeto <span class="accent-green">✦</span></span></div></div>
+  <div class="container header-main">
+    <a class="brand" href="index.html" aria-label="Riverside Store — voltar ao início">
+      <img src="img/logo-marca.png" width="61" height="61" alt="" class="brand-symbol">
+      <span class="brand-words"><strong>RIVERSIDE</strong><small>STORE <i>●</i> CONSTRUÇÃO &amp; REFORMA</small></span>
+    </a>
+    <nav class="desktop-links" aria-label="Navegação principal"><a class="nav-link-site " href="index.html" >Início</a><a class="nav-link-site " href="produtos.html" >Produtos</a><a class="nav-link-site " href="cadastro.html" >Cadastro</a><a class="nav-link-site " href="sobre.html" >Sobre</a><a class="nav-link-site is-active" href="trabalheConosco.html" aria-current="page">Trabalhe Conosco</a></nav>
+    <a class="btn btn-outline-sky header-account" href="cadastro.html">Criar conta <span aria-hidden="true">↗</span></a>
+    <details class="mobile-navigation">
+      <summary aria-label="Abrir ou fechar menu"><span></span><span></span><span></span><b>Menu</b></summary>
+      <nav class="mobile-list" aria-label="Navegação para celular"><a class="mobile-link " href="index.html">Início</a><a class="mobile-link " href="produtos.html">Produtos</a><a class="mobile-link " href="cadastro.html">Cadastro</a><a class="mobile-link " href="sobre.html">Sobre</a><a class="mobile-link is-active" href="trabalheConosco.html">Trabalhe Conosco</a></nav>
+    </details>
+  </div>
+  <div class="header-bottom"><div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+    <span class="mini-headline"><span class="sparkle">✦</span> Tudo para construir, reformar e transformar.</span>
+    <a href="produtos.html" class="header-shortcut">Explorar catálogo <span aria-hidden="true">→</span></a>
+  </div></div>
+</header>
+<main id="conteudo">
+<section class="page-banner page-banner-jobs"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-7"><span class="eyebrow eyebrow-light">PESSOAS QUE CONSTROEM O FUTURO</span><h1>Trabalhe <span>conosco.</span></h1><p>Boas ideias nascem de boas conexões. Conheça como seria fazer parte do universo Riverside Store.</p><a href="#oportunidades" class="btn btn-river btn-lg">Explorar oportunidades <span aria-hidden="true">→</span></a></div><div class="col-lg-5"><div class="jobs-hero-art"><img src="img/logo-marca.png" alt="" width="250"><span class="jobs-tag">GENTE QUE FAZ ACONTECER ✦</span></div></div></div></div></section>
+<section class="section-space"><div class="container"><div class="section-heading"><div><span class="eyebrow">CULTURA E AMBIENTE</span><h2>Um lugar para <span>crescer junto</span></h2><p>Uma proposta de equipe baseada em colaboração e aprendizado.</p></div></div>
+ <div class="row g-4"><div class="col-sm-6 col-lg-3"><div class="benefit-card"><span>↗</span><h3>Aprendizado</h3><p>Espaço para trocar experiências e desenvolver habilidades.</p></div></div><div class="col-sm-6 col-lg-3"><div class="benefit-card"><span>✦</span><h3>Colaboração</h3><p>Pessoas conectadas para alcançar objetivos em comum.</p></div></div><div class="col-sm-6 col-lg-3"><div class="benefit-card"><span>✓</span><h3>Respeito</h3><p>Comunicação clara e valorização de perspectivas diferentes.</p></div></div><div class="col-sm-6 col-lg-3"><div class="benefit-card"><span>∞</span><h3>Possibilidades</h3><p>Um ambiente preparado para evoluir junto com novos projetos.</p></div></div></div>
+ </div></section>
+<section class="section-space section-tinted" id="oportunidades"><div class="container"><div class="section-heading"><div><span class="eyebrow">CONHEÇA AS ÁREAS</span><h2>Áreas de <span>atuação</span></h2><p>Exemplos de funções que podem existir em uma loja de materiais de construção.</p></div><span class="catalog-count">Oportunidades ilustrativas</span></div>
+<div class="row g-3 g-lg-4"><div class="col-md-6 col-lg-3"><article class="job-card"><span class="job-area">ATENDIMENTO</span><h3>Vendedor(a) de loja</h3><p>Apoio aos clientes e organização de soluções para a obra.</p><a href="#enviar-curriculo">Conhecer formulário <span aria-hidden="true">↗</span></a></article></div><div class="col-md-6 col-lg-3"><article class="job-card"><span class="job-area">LOGÍSTICA</span><h3>Auxiliar de estoque</h3><p>Recebimento, conferência e organização de materiais.</p><a href="#enviar-curriculo">Conhecer formulário <span aria-hidden="true">↗</span></a></article></div><div class="col-md-6 col-lg-3"><article class="job-card"><span class="job-area">ADMINISTRATIVO</span><h3>Assistente administrativo</h3><p>Rotinas de controle, cadastros e suporte operacional.</p><a href="#enviar-curriculo">Conhecer formulário <span aria-hidden="true">↗</span></a></article></div><div class="col-md-6 col-lg-3"><article class="job-card"><span class="job-area">ENTREGAS</span><h3>Motorista de entrega</h3><p>Movimentação de pedidos e cuidado com os materiais.</p><a href="#enviar-curriculo">Conhecer formulário <span aria-hidden="true">↗</span></a></article></div></div>
+<p class="demo-note mt-3">As funções acima são exemplos de layout; não representam vagas abertas reais.</p>
+</div></section>
+<section class="section-space" id="enviar-curriculo"><div class="container"><div class="row g-4 align-items-start"><div class="col-lg-4"><span class="eyebrow">VENHA FAZER PARTE</span><h2 class="content-heading">Conte-nos um pouco <span>sobre você.</span></h2><p class="content-copy">Este é o modelo visual de um formulário de candidatura. Para receber currículos de verdade, a loja precisará configurar um servidor ou sistema específico.</p><div class="application-art"><span>R</span><p>SEU PRÓXIMO PASSO</p></div></div>
+<div class="col-lg-8"><div class="form-card"><div class="form-card-title"><span class="eyebrow">FORMULÁRIO DE DEMONSTRAÇÃO</span><h2>Envie seu currículo</h2><p>Interface apenas visual: o arquivo selecionado não é transmitido a lugar nenhum.</p></div>
+<form class="row g-3" autocomplete="off" novalidate enctype="multipart/form-data">
+<div class="col-md-6"><label for="candidato-nome" class="form-label">Nome completo <span>*</span></label><input type="text" id="candidato-nome" name="nome" class="form-control" placeholder="Seu nome" required></div>
+<div class="col-md-6"><label for="candidato-email" class="form-label">E-mail <span>*</span></label><input type="email" id="candidato-email" name="email" class="form-control" placeholder="seuemail@exemplo.com" required></div>
+<div class="col-md-6"><label for="candidato-telefone" class="form-label">Telefone</label><input type="tel" id="candidato-telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000"></div>
+<div class="col-md-6"><label for="candidato-estado" class="form-label">Estado</label><select class="form-select" id="candidato-estado" name="estado"><option value="">Selecione</option><option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option><option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option><option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option><option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option><option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option><option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option><option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option><option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option><option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option></select></div>
+<div class="col-12"><label for="area" class="form-label">Área de interesse</label><select class="form-select" id="area" name="area"><option value="">Selecione uma área</option><option>Atendimento / Vendas</option><option>Estoque / Logística</option><option>Administrativo</option><option>Entregas</option><option>Outras áreas</option></select></div>
+<div class="col-12"><label for="curriculo" class="form-label">Anexar currículo (.pdf, .doc ou .docx)</label><input class="form-control" type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx"><small class="form-hint">Neste exemplo, o navegador apenas seleciona o arquivo; não ocorre upload.</small></div>
+<div class="col-12"><button class="btn btn-river btn-lg" type="button" disabled aria-disabled="true">Enviar currículo <span aria-hidden="true">→</span></button><span class="disabled-explanation ms-2">Envio desativado até integrar um servidor.</span></div>
+</form></div></div></div></div></section>
+</main>
+<!-- Rodapé com a mesma identidade visual em todas as páginas -->
+<footer class="site-footer">
+  <div class="container py-5">
+    <div class="row g-4 g-lg-5">
+      <div class="col-md-5 col-lg-4">
+        <a href="index.html" class="footer-brand" aria-label="Riverside Store — Início"><img src="img/logo.png" alt="Logo original Riverside Store" width="140" height="140"></a>
+        <p class="footer-description">Do primeiro tijolo aos últimos detalhes. Uma experiência de compra pensada para acompanhar sua obra.</p>
+        <span class="footer-pill">✦ Sua obra começa aqui</span>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2"><h2 class="footer-heading">Navegação</h2><ul class="footer-links"><li><a href="index.html">Início</a></li><li><a href="produtos.html">Produtos</a></li><li><a href="cadastro.html">Cadastro</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="trabalheConosco.html">Trabalhe Conosco</a></li></ul></div>
+      <div class="col-6 col-md-4 col-lg-3"><h2 class="footer-heading">Categorias</h2><ul class="footer-links">
+        <li><a href="produtos.html#catalogo">Cimentos e argamassas</a></li><li><a href="produtos.html#catalogo">Ferramentas</a></li>
+        <li><a href="produtos.html#catalogo">Hidráulica e elétrica</a></li><li><a href="produtos.html#catalogo">Tintas e acabamentos</a></li>
+      </ul></div>
+      <div class="col-md-6 col-lg-3"><h2 class="footer-heading">Atendimento</h2>
+        <p class="footer-contact">Adicione aqui o telefone, e-mail e endereço reais da sua loja.</p>
+        <a href="cadastro.html" class="footer-link-button">Conheça nosso cadastro <span aria-hidden="true">→</span></a>
+        <p class="footer-disclaimer">Projeto demonstrativo — informações comerciais ilustrativas.</p>
+      </div>
+    </div>
+    <div class="footer-lower d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+      <span>© 2026 Riverside Store. Layout demonstrativo para estudos.</span>
+      <span>Feito com HTML5 <i>·</i> CSS3 <i>·</i> Bootstrap 5.3</span>
+    </div>
+  </div>
+</footer>
 </body>
-<!-- Final do Body-->
-
 </html>
