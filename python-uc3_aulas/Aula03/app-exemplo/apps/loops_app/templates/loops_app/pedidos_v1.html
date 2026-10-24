@@ -48,43 +48,131 @@
         </ul>
     </div>
 
-    <div class="col-8">
+    
+<div class="col-8">
 
-        <h1 class="fw-bold"> Lista de Compras </h1>
-        <hr>
-        <h5 class="mt-4">💻 Informática</h5>
-        <ul class="list-group mb-3">
+    <h1 class="fw-bold">Lista de Compras</h1>
+    <hr>
+
+    <h5 class="mt-4 mb-3">
+        <i class="fa-solid fa-laptop"></i> Informática
+    </h5>
+
+    <!-- Lista de produtos -->
+    <ul class="list-group mb-3">
+
+        <!-- Cabeçalho das categorias -->
+        <li class="list-group-item active d-none d-md-block">
+            <div class="row align-items-center fw-bold g-2">
+                <div class="col-md-5">Produto</div>
+                <div class="col-md-2 text-end">Preço</div>
+                <div class="col-md-2 text-center">Quantidade</div>
+                <div class="col-md-3 text-end">Subtotal</div>
+            </div>
+        </li>
+
+        <!-- Produtos cadastrados -->
         {% for item in produtos %}
-            <li class="list-group-item d-flex justify-content-between">
-                Produto: {{ item.produto }} - Preço: {{ item.preco }}
-                Quantidade: {{ item.quantidade }} - Subtotal: {{ item.subtotal }}
-            </li>
+
+        <li class="list-group-item py-3">
+            <div class="row align-items-center g-2">
+
+                <!-- Nome do produto -->
+                <div class="col-12 col-md-5">
+                    <span class="fw-semibold">
+                        {{ item.produto }}
+                    </span>
+                </div>
+
+                <!-- Preço -->
+                <div class="col-4 col-md-2 text-md-end">
+                    <small class="text-muted d-block d-md-none">
+                        Preço
+                    </small>
+                    R$ {{ item.preco|floatformat:"2g" }}
+                </div>
+
+                <!-- Quantidade -->
+                <div class="col-4 col-md-2 text-md-center">
+                    <small class="text-muted d-block d-md-none">
+                        Quantidade
+                    </small>
+                    {{ item.quantidade }}
+                </div>
+
+                <!-- Subtotal -->
+                <div class="col-4 col-md-3 text-md-end">
+                    <small class="text-muted d-block d-md-none">
+                        Subtotal
+                    </small>
+                    <span class="fw-bold">
+                        R$ {{ item.subtotal|floatformat:"2g" }}
+                    </span>
+                </div>
+
+            </div>
+        </li>
+
         {% empty %}
-            <li> Não há produtos </li>
+
+        <li class="list-group-item text-center text-muted py-3">
+            Nenhum produto cadastrado.
+        </li>
+
         {% endfor %}
-        </ul>
-        <hr>
 
-        <div class="d-flex justify-content-between align-items-center">
-            <h4 class="fw-bold">Valor total:</h4>
-            <h4 class="text-end text-primary fw-bold">R$: {{ total }} </h4>
-        </div>
-        <hr>
+    </ul>
 
-        <table>
-            <thead class="border bg-primary text-light fw-bold">
-                <td> Produtos Únicos: </td>
-            </thead>
-            {% for unico in unicos %}
-                <tr class="border"><td class="border"> {{ unico }} </td></tr>
-            {% endfor %}
+    <hr>
 
-            <tr class="border bg-primary text-light fw-bold"><td>Quantidade Únicos</td></tr>
-            <tr class="border"><td> {{ qt_unicos }} </td></tr>
-            
-        </table>
+    <!-- Valor total da compra -->
+    <div class="d-flex justify-content-between align-items-center">
+        <h4 class="fw-bold mb-0">Valor total:</h4>
 
+        <h4 class="text-primary fw-bold mb-0">
+            R$ {{ total|floatformat:"2g" }}
+        </h4>
     </div>
+
+    <hr>
+
+    <!-- Produtos únicos -->
+    <h5 class="fw-bold mt-4 mb-3">
+        Produtos Únicos
+    </h5>
+
+    <ul class="list-group mb-3">
+
+        <li class="list-group-item active fw-bold">
+            Produtos encontrados
+        </li>
+
+        {% for unico in unicos %}
+        <li class="list-group-item">
+            <i class="fa-solid fa-check text-primary me-2"></i>
+            {{ unico }}
+        </li>
+        {% empty %}
+        <li class="list-group-item text-muted">
+            Nenhum produto encontrado.
+        </li>
+        {% endfor %}
+
+        <!-- Contador de produtos únicos -->
+        <li class="list-group-item d-flex justify-content-between
+                   align-items-center fw-bold">
+
+            Quantidade de produtos únicos:
+
+            <span class="badge bg-primary rounded-pill">
+                {{ qt_unicos }}
+            </span>
+
+        </li>
+
+    </ul>
+
+</div>
 
 </div>
 {% endblock %}
