@@ -1,0 +1,91 @@
+{% extends "loops_app/_base_loops.html" %}
+
+{# Inicio do conteúdo da página #}
+{% block conteudo %}
+
+<h2>Parte 1 - Aula 04 </h2>
+
+
+<div class="row pt-3">
+    <div class="col-4">
+                <ul class="list-group">
+
+            <li class="list-group-item active" aria-current="true">
+                Exemplos: <i class="fa-solid fa-face-smile-wink"></i>
+
+            </li>
+
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:pagina_for' %}">
+                    <i class="fa-solid fa-repeat"></i> For
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:jogo_adivinhacao' %}">
+                    <i class="fa-solid fa-dice"></i> Jogo 
+                </a>
+
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:amortizacao' %}">
+                    <i class="fa-solid fa-sack-dollar"></i> Amortização 
+                </a>                        
+
+            </li>
+            
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:fatores' %}">
+                    <i class="fa-solid fa-hashtag"></i> Fatores 
+                </a>
+            </li>  
+
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:consolidacao_pedidos' %}">
+                    <i class="fa-solid fa-cart-shopping"></i> Pedido 
+                </a>
+            </li> 
+
+        </ul>
+    </div>
+
+    <div class="col-8">
+
+        <h1 class="fw-bold"> Lista de Compras </h1>
+        <hr>
+        <h5 class="mt-4">💻 Informática</h5>
+        <ul class="list-group mb-3">
+        {% for item in produtos %}
+            <li class="list-group-item d-flex justify-content-between">
+                Produto: {{ item.produto }} - Preço: {{ item.preco }}
+                Quantidade: {{ item.quantidade }} - Subtotal: {{ item.subtotal }}
+            </li>
+        {% empty %}
+            <li> Não há produtos </li>
+        {% endfor %}
+        </ul>
+        <hr>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h4 class="fw-bold">Valor total:</h4>
+            <h4 class="text-end text-primary fw-bold">R$: {{ total }} </h4>
+        </div>
+        <hr>
+
+        <table>
+            <thead class="border bg-primary text-light fw-bold">
+                <td> Produtos Únicos: </td>
+            </thead>
+            {% for unico in unicos %}
+                <tr class="border"><td class="border"> {{ unico }} </td></tr>
+            {% endfor %}
+
+            <tr class="border bg-primary text-light fw-bold"><td>Quantidade Únicos</td></tr>
+            <tr class="border"><td> {{ qt_unicos }} </td></tr>
+            
+        </table>
+
+    </div>
+
+</div>
+{% endblock %}
+{# FIM - Conteúdo da página #}
