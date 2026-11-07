@@ -9,3 +9,17 @@ def lista_receitas(request):
         "receitas": receitas,
     }
     return render(request, "receitas/lista.html", context)
+
+def exibir_receita(request, pk):
+
+    receita = get_object_or_404(
+        Receita,
+        pk=pk,
+        publicada=True,
+    )
+
+    context = {
+        'receita': receita,
+    }
+
+    return render(request, "receitas/exibir_receita.html", context)  
