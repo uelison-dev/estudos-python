@@ -1,0 +1,143 @@
+
+[
+    {
+        "categoria": "Esportivo",
+        "nome": "Tênis Nike Revolution 7",
+        "descricao": "Tênis esportivo masculino indicado para corridas leves, caminhadas e atividades físicas.",
+        "preco": "349.90",
+        "quantidade_estoque": 15
+    },
+    {
+        "categoria": "Esportivo",
+        "nome": "Tênis Adidas Runfalcon 3.0",
+        "descricao": "Tênis esportivo confortável para corridas e caminhadas.",
+        "preco": "299.90",
+        "quantidade_estoque": 12
+    },
+    {
+        "categoria": "Casual",
+        "nome": "Tênis Casual Branco",
+        "descricao": "Tênis casual branco com design moderno para uso cotidiano.",
+        "preco": "189.90",
+        "quantidade_estoque": 20
+    },
+    {
+        "categoria": "Casual",
+        "nome": "Tênis Slip On Preto",
+        "descricao": "Tênis casual sem cadarço, confortável e prático para o dia a dia.",
+        "preco": "159.90",
+        "quantidade_estoque": 18
+    },
+    {
+        "categoria": "Social",
+        "nome": "Sapato Social Oxford Preto",
+        "descricao": "Sapato social masculino clássico, indicado para eventos formais e ambientes profissionais.",
+        "preco": "399.90",
+        "quantidade_estoque": 8
+    },
+    {
+        "categoria": "Social",
+        "nome": "Sapato Social Derby Marrom",
+        "descricao": "Sapato social masculino com acabamento elegante e confortável.",
+        "preco": "379.90",
+        "quantidade_estoque": 7
+    },
+    {
+        "categoria": "Elegante",
+        "nome": "Scarpin Feminino Preto",
+        "descricao": "Scarpin feminino com salto elegante, indicado para ocasiões especiais.",
+        "preco": "259.90",
+        "quantidade_estoque": 10
+    },
+    {
+        "categoria": "Elegante",
+        "nome": "Sandália Feminina Dourada",
+        "descricao": "Sandália feminina sofisticada com acabamento dourado.",
+        "preco": "229.90",
+        "quantidade_estoque": 9
+    },
+    {
+        "categoria": "Urbano",
+        "nome": "Tênis Streetwear Cinza",
+        "descricao": "Tênis inspirado na moda urbana, com design contemporâneo.",
+        "preco": "279.90",
+        "quantidade_estoque": 14
+    },
+    {
+        "categoria": "Urbano",
+        "nome": "Tênis Chunky Branco",
+        "descricao": "Tênis urbano com solado robusto e visual moderno.",
+        "preco": "319.90",
+        "quantidade_estoque": 11
+    },
+    {
+        "categoria": "Praia",
+        "nome": "Chinelo Masculino Azul",
+        "descricao": "Chinelo masculino leve e confortável para praia e piscina.",
+        "preco": "49.90",
+        "quantidade_estoque": 30
+    },
+    {
+        "categoria": "Praia",
+        "nome": "Sandália Feminina Rasteira",
+        "descricao": "Sandália rasteira feminina ideal para passeios e momentos de lazer.",
+        "preco": "89.90",
+        "quantidade_estoque": 22
+    },
+    {
+        "categoria": "Fitness",
+        "nome": "Tênis Academia Training",
+        "descricao": "Tênis desenvolvido para musculação, exercícios funcionais e treinamento físico.",
+        "preco": "289.90",
+        "quantidade_estoque": 13
+    },
+    {
+        "categoria": "Fitness",
+        "nome": "Tênis Fitness Rosa",
+        "descricao": "Tênis feminino para academia, com estrutura leve e confortável.",
+        "preco": "269.90",
+        "quantidade_estoque": 10
+    },
+    {
+        "categoria": "Aventura",
+        "nome": "Bota Adventure Trekking",
+        "descricao": "Bota resistente indicada para trilhas, caminhadas e atividades ao ar livre.",
+        "preco": "459.90",
+        "quantidade_estoque": 6
+    },
+    {
+        "categoria": "Aventura",
+        "nome": "Tênis Trail Running",
+        "descricao": "Tênis para corrida em trilhas com solado de boa aderência.",
+        "preco": "399.90",
+        "quantidade_estoque": 8
+    },
+    {
+        "categoria": "Infantil",
+        "nome": "Tênis Infantil Velcro Azul",
+        "descricao": "Tênis infantil confortável com fechamento em velcro.",
+        "preco": "129.90",
+        "quantidade_estoque": 16
+    },
+    {
+        "categoria": "Infantil",
+        "nome": "Sandália Infantil Rosa",
+        "descricao": "Sandália infantil leve e confortável para uso cotidiano.",
+        "preco": "79.90",
+        "quantidade_estoque": 19
+    },
+    {
+        "categoria": "Premium",
+        "nome": "Tênis Premium Couro Branco",
+        "descricao": "Tênis premium confeccionado em couro, com acabamento sofisticado.",
+        "preco": "599.90",
+        "quantidade_estoque": 5
+    },
+    {
+        "categoria": "Premium",
+        "nome": "Sapato Premium Couro Marrom",
+        "descricao": "Sapato masculino premium em couro legítimo, com design refinado.",
+        "preco": "649.90",
+        "quantidade_estoque": 4
+    }
+]

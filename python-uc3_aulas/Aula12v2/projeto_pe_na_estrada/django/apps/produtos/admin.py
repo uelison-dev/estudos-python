@@ -28,13 +28,47 @@ class ProdutoAdmin(admin.ModelAdmin):
     
     ordering = ["nome", "categoria"]
 
-#@admin.register(Cliente)
-#class ClienteAdmin(admin.ModelAdmin):
+@admin.register(Cliente)
+class ClienteAdmin(admin.ModelAdmin):
 
-    #list_display = ["id", "nome", "descricao"]
+    list_display = ["foto", "usuario", "nome_social", "telefone", "data_nascimento", "sexo", "cpf"]
 
- #   search_fields = ["nome", "descricao"]
+    search_fields = ["usuario", "cpf"]
 
-   # ordering = ["nome"]
+    ordering = ["usuario", "cpf"]
 
+@admin.register(EnderecoEntrega)
+class EnderecoEntregaAdmin(admin.ModelAdmin):
 
+    list_display = ["cliente", "logradouro", "numero", "complemento", "bairro", "cidade", "estado", "cep"]
+
+    search_fields = ["cliente", "bairro", "cidade", "estado", "cep"]
+
+    ordering = ["cliente"]
+
+@admin.register(Pedido)
+class PedidoAdmin(admin.ModelAdmin):
+
+    list_display = ["cliente", "status", "endereco_entrega", "criado_em", "atualizado_em"]
+
+    search_fields = ["cliente", "status", "endereco_entrega", "criado_em"]
+
+    ordering = ["cliente", "status"]
+
+@admin.register(ItemPedido)
+class ItemPedidoAdmin(admin.ModelAdmin):
+
+    list_display = ["pedido", "produto", "quantidade", "preco_unitario"]
+
+    search_fields = ["pedido", "produto"]
+
+    ordering = ["pedido"]
+
+@admin.register(ComentarioAvaliacao)
+class ComentarioAvaliacaoAdmin(admin.ModelAdmin):
+
+    list_display = ["cliente", "produto", "criado_em", "nota", "texto"]
+
+    search_fields = ["cliente", "produto"]
+
+    ordering = ["produto", "cliente"]

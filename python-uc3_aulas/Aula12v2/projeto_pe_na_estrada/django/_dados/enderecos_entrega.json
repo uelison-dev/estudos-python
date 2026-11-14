@@ -1,0 +1,203 @@
+
+[
+    {
+        "username": "joao.silva",
+        "logradouro": "Rua das Flores",
+        "numero": "125",
+        "complemento": "Apartamento 101",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01001-000"
+    },
+    {
+        "username": "maria.santos",
+        "logradouro": "Avenida Paulista",
+        "numero": "1500",
+        "complemento": "Apartamento 82",
+        "bairro": "Bela Vista",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01310-200"
+    },
+    {
+        "username": "pedro.oliveira",
+        "logradouro": "Rua das Laranjeiras",
+        "numero": "240",
+        "complemento": "Casa 2",
+        "bairro": "Laranjeiras",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "22240-003"
+    },
+    {
+        "username": "ana.costa",
+        "logradouro": "Avenida Atlântica",
+        "numero": "850",
+        "complemento": "Apartamento 304",
+        "bairro": "Copacabana",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "22021-001"
+    },
+    {
+        "username": "lucas.pereira",
+        "logradouro": "Rua da Bahia",
+        "numero": "700",
+        "complemento": "Apartamento 502",
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30160-011"
+    },
+    {
+        "username": "juliana.almeida",
+        "logradouro": "Avenida do Contorno",
+        "numero": "3200",
+        "complemento": "Bloco B",
+        "bairro": "Santa Efigênia",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30110-017"
+    },
+    {
+        "username": "gabriel.rocha",
+        "logradouro": "Rua XV de Novembro",
+        "numero": "450",
+        "complemento": "Apartamento 12",
+        "bairro": "Centro",
+        "cidade": "Curitiba",
+        "estado": "PR",
+        "cep": "80020-310"
+    },
+    {
+        "username": "fernanda.lima",
+        "logradouro": "Avenida Paraná",
+        "numero": "980",
+        "complemento": "Casa",
+        "bairro": "Boa Vista",
+        "cidade": "Curitiba",
+        "estado": "PR",
+        "cep": "82540-000"
+    },
+    {
+        "username": "rafael.gomes",
+        "logradouro": "Rua dos Andradas",
+        "numero": "1200",
+        "complemento": "Apartamento 703",
+        "bairro": "Centro Histórico",
+        "cidade": "Porto Alegre",
+        "estado": "RS",
+        "cep": "90020-008"
+    },
+    {
+        "username": "camila.ribeiro",
+        "logradouro": "Avenida Ipiranga",
+        "numero": "2500",
+        "complemento": "Bloco A, apartamento 204",
+        "bairro": "Azenha",
+        "cidade": "Porto Alegre",
+        "estado": "RS",
+        "cep": "90160-091"
+    },
+    {
+        "username": "bruno.carvalho",
+        "logradouro": "Rua Augusta",
+        "numero": "600",
+        "complemento": "Apartamento 45",
+        "bairro": "Consolação",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01304-000"
+    },
+    {
+        "username": "patricia.martins",
+        "logradouro": "Rua Vergueiro",
+        "numero": "1800",
+        "complemento": "Apartamento 91",
+        "bairro": "Vila Mariana",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "04102-000"
+    },
+    {
+        "username": "diego.araujo",
+        "logradouro": "Rua Barata Ribeiro",
+        "numero": "350",
+        "complemento": "Apartamento 202",
+        "bairro": "Copacabana",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "22040-001"
+    },
+    {
+        "username": "beatriz.melo",
+        "logradouro": "Rua Conde de Bonfim",
+        "numero": "500",
+        "complemento": "Casa 3",
+        "bairro": "Tijuca",
+        "cidade": "Rio de Janeiro",
+        "estado": "RJ",
+        "cep": "20520-054"
+    },
+    {
+        "username": "andre.barros",
+        "logradouro": "Rua dos Guajajaras",
+        "numero": "900",
+        "complemento": "Apartamento 601",
+        "bairro": "Centro",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30180-100"
+    },
+    {
+        "username": "carolina.nunes",
+        "logradouro": "Rua Professor Moraes",
+        "numero": "220",
+        "complemento": "Apartamento 303",
+        "bairro": "Funcionários",
+        "cidade": "Belo Horizonte",
+        "estado": "MG",
+        "cep": "30150-370"
+    },
+    {
+        "username": "marcos.ferreira",
+        "logradouro": "Rua Marechal Deodoro",
+        "numero": "110",
+        "complemento": "Apartamento 14",
+        "bairro": "Centro",
+        "cidade": "Curitiba",
+        "estado": "PR",
+        "cep": "80020-320"
+    },
+    {
+        "username": "amanda.castro",
+        "logradouro": "Rua Itupava",
+        "numero": "750",
+        "complemento": "Casa",
+        "bairro": "Alto da XV",
+        "cidade": "Curitiba",
+        "estado": "PR",
+        "cep": "80040-455"
+    },
+    {
+        "username": "thiago.mendes",
+        "logradouro": "Rua Lima e Silva",
+        "numero": "400",
+        "complemento": "Apartamento 502",
+        "bairro": "Cidade Baixa",
+        "cidade": "Porto Alegre",
+        "estado": "RS",
+        "cep": "90050-100"
+    },
+    {
+        "username": "isabela.cardoso",
+        "logradouro": "Rua Padre Chagas",
+        "numero": "300",
+        "complemento": "Apartamento 801",
+        "bairro": "Moinhos de Vento",
+        "cidade": "Porto Alegre",
+        "estado": "RS",
+        "cep": "90570-080"
+    }
+]

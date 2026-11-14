@@ -1,0 +1,83 @@
+
+[
+    {
+        "nome": "Esportivo",
+        "descricao": "Produtos destinados à prática de atividades físicas, esportes e exercícios."
+    },
+    {
+        "nome": "Casual",
+        "descricao": "Produtos para uso cotidiano, com conforto e estilo informal."
+    },
+    {
+        "nome": "Social",
+        "descricao": "Produtos destinados a ocasiões formais, eventos e ambientes profissionais."
+    },
+    {
+        "nome": "Elegante",
+        "descricao": "Produtos com design sofisticado, acabamento refinado e estilo clássico."
+    },
+    {
+        "nome": "Urbano",
+        "descricao": "Produtos inspirados no estilo das cidades e na moda urbana contemporânea."
+    },
+    {
+        "nome": "Praia",
+        "descricao": "Produtos destinados ao uso em praias, piscinas e atividades aquáticas."
+    },
+    {
+        "nome": "Fitness",
+        "descricao": "Produtos desenvolvidos para academia, musculação e treinamento físico."
+    },
+    {
+        "nome": "Aventura",
+        "descricao": "Produtos indicados para trilhas, camping, viagens e atividades ao ar livre."
+    },
+    {
+        "nome": "Infantil",
+        "descricao": "Produtos destinados a bebês e crianças."
+    },
+    {
+        "nome": "Juvenil",
+        "descricao": "Produtos destinados ao público adolescente e jovem."
+    },
+    {
+        "nome": "Masculino",
+        "descricao": "Produtos desenvolvidos para atender ao público masculino."
+    },
+    {
+        "nome": "Feminino",
+        "descricao": "Produtos desenvolvidos para atender ao público feminino."
+    },
+    {
+        "nome": "Unissex",
+        "descricao": "Produtos com características adequadas para diferentes públicos."
+    },
+    {
+        "nome": "Clássico",
+        "descricao": "Produtos com estilo tradicional e características atemporais."
+    },
+    {
+        "nome": "Moderno",
+        "descricao": "Produtos com design atual, tendências contemporâneas e inovação."
+    },
+    {
+        "nome": "Minimalista",
+        "descricao": "Produtos com design simples, funcional e sem excessos visuais."
+    },
+    {
+        "nome": "Vintage",
+        "descricao": "Produtos inspirados em estilos, tendências e referências de décadas passadas."
+    },
+    {
+        "nome": "Trabalho",
+        "descricao": "Produtos destinados ao uso profissional e ambientes de trabalho."
+    },
+    {
+        "nome": "Conforto",
+        "descricao": "Produtos desenvolvidos para proporcionar conforto durante o uso prolongado."
+    },
+    {
+        "nome": "Premium",
+        "descricao": "Produtos com materiais selecionados, qualidade superior e acabamento diferenciado."
+    }
+]

@@ -1,0 +1,223 @@
+
+[
+    {
+        "username": "joao.silva",
+        "email": "joao.silva@example.com",
+        "first_name": "João",
+        "last_name": "Silva",
+        "telefone": "(11) 99999-0001",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1990-05-15",
+        "cpf": "TESTE000001"
+    },
+    {
+        "username": "maria.santos",
+        "email": "maria.santos@example.com",
+        "first_name": "Maria",
+        "last_name": "Santos",
+        "telefone": "(11) 99999-0002",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1988-08-22",
+        "cpf": "TESTE000002"
+    },
+    {
+        "username": "pedro.oliveira",
+        "email": "pedro.oliveira@example.com",
+        "first_name": "Pedro",
+        "last_name": "Oliveira",
+        "telefone": "(21) 99999-0003",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1995-02-10",
+        "cpf": "TESTE000003"
+    },
+    {
+        "username": "ana.costa",
+        "email": "ana.costa@example.com",
+        "first_name": "Ana",
+        "last_name": "Costa",
+        "telefone": "(21) 99999-0004",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1992-11-30",
+        "cpf": "TESTE000004"
+    },
+    {
+        "username": "lucas.pereira",
+        "email": "lucas.pereira@example.com",
+        "first_name": "Lucas",
+        "last_name": "Pereira",
+        "telefone": "(31) 99999-0005",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1987-04-18",
+        "cpf": "TESTE000005"
+    },
+    {
+        "username": "juliana.almeida",
+        "email": "juliana.almeida@example.com",
+        "first_name": "Juliana",
+        "last_name": "Almeida",
+        "telefone": "(31) 99999-0006",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1998-07-12",
+        "cpf": "TESTE000006"
+    },
+    {
+        "username": "gabriel.rocha",
+        "email": "gabriel.rocha@example.com",
+        "first_name": "Gabriel",
+        "last_name": "Rocha",
+        "telefone": "(41) 99999-0007",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1993-01-25",
+        "cpf": "TESTE000007"
+    },
+    {
+        "username": "fernanda.lima",
+        "email": "fernanda.lima@example.com",
+        "first_name": "Fernanda",
+        "last_name": "Lima",
+        "telefone": "(41) 99999-0008",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1991-09-05",
+        "cpf": "TESTE000008"
+    },
+    {
+        "username": "rafael.gomes",
+        "email": "rafael.gomes@example.com",
+        "first_name": "Rafael",
+        "last_name": "Gomes",
+        "telefone": "(51) 99999-0009",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1989-12-14",
+        "cpf": "TESTE000009"
+    },
+    {
+        "username": "camila.ribeiro",
+        "email": "camila.ribeiro@example.com",
+        "first_name": "Camila",
+        "last_name": "Ribeiro",
+        "telefone": "(51) 99999-0010",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1996-03-20",
+        "cpf": "TESTE000010"
+    },
+    {
+        "username": "bruno.carvalho",
+        "email": "bruno.carvalho@example.com",
+        "first_name": "Bruno",
+        "last_name": "Carvalho",
+        "telefone": "(11) 99999-0011",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1985-06-08",
+        "cpf": "TESTE000011"
+    },
+    {
+        "username": "patricia.martins",
+        "email": "patricia.martins@example.com",
+        "first_name": "Patrícia",
+        "last_name": "Martins",
+        "telefone": "(11) 99999-0012",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1994-10-17",
+        "cpf": "TESTE000012"
+    },
+    {
+        "username": "diego.araujo",
+        "email": "diego.araujo@example.com",
+        "first_name": "Diego",
+        "last_name": "Araújo",
+        "telefone": "(21) 99999-0013",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1997-02-28",
+        "cpf": "TESTE000013"
+    },
+    {
+        "username": "beatriz.melo",
+        "email": "beatriz.melo@example.com",
+        "first_name": "Beatriz",
+        "last_name": "Melo",
+        "telefone": "(21) 99999-0014",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1990-12-03",
+        "cpf": "TESTE000014"
+    },
+    {
+        "username": "andre.barros",
+        "email": "andre.barros@example.com",
+        "first_name": "André",
+        "last_name": "Barros",
+        "telefone": "(31) 99999-0015",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1986-08-19",
+        "cpf": "TESTE000015"
+    },
+    {
+        "username": "carolina.nunes",
+        "email": "carolina.nunes@example.com",
+        "first_name": "Carolina",
+        "last_name": "Nunes",
+        "telefone": "(31) 99999-0016",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1999-04-11",
+        "cpf": "TESTE000016"
+    },
+    {
+        "username": "marcos.ferreira",
+        "email": "marcos.ferreira@example.com",
+        "first_name": "Marcos",
+        "last_name": "Ferreira",
+        "telefone": "(41) 99999-0017",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1984-01-09",
+        "cpf": "TESTE000017"
+    },
+    {
+        "username": "amanda.castro",
+        "email": "amanda.castro@example.com",
+        "first_name": "Amanda",
+        "last_name": "Castro",
+        "telefone": "(41) 99999-0018",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1993-06-26",
+        "cpf": "TESTE000018"
+    },
+    {
+        "username": "thiago.mendes",
+        "email": "thiago.mendes@example.com",
+        "first_name": "Thiago",
+        "last_name": "Mendes",
+        "telefone": "(51) 99999-0019",
+        "sexo": "M",
+        "nome_social": "",
+        "data_nascimento": "1991-03-07",
+        "cpf": "TESTE000019"
+    },
+    {
+        "username": "isabela.cardoso",
+        "email": "isabela.cardoso@example.com",
+        "first_name": "Isabela",
+        "last_name": "Cardoso",
+        "telefone": "(51) 99999-0020",
+        "sexo": "F",
+        "nome_social": "",
+        "data_nascimento": "1997-11-21",
+        "cpf": "TESTE000020"
+    }
+]
